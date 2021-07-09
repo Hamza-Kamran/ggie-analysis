@@ -1,0 +1,60 @@
+
+
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+
+  <title>GGIE GEOSPATIAL DATA ANALYSIS</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div id= "title">
+    GGIE GEOSPATIAL ANALYSIS
+
+    <nav>
+      <ul>
+      <li><a href="index.html">Home</a></li>
+      <div class="geospatial-dropdown">
+        <li>Geospatials
+          <ul>
+           <li><a href="country.html">Country</a></li>
+           <li><a href="state.html">State</a></li>
+           <li><a href="county.html">County</a></li>
+         </ul>
+        </li>
+       </div>
+      <li><a href="">About GGIE</a></li>
+      </ul>
+    </nav>
+
+  </div>
+
+
+  <h4> State-Wise </h4>
+  <div id='states'>
+    <div id="state-buttons">
+      <button type="button" class="button" id="state-first" value="partial" onclick="ToggleState('ten-states')">Display Top 10</button>
+      <button type="button" class="button" id="state-second" value = "full" onclick="ToggleState('all-states')"> Display All </button>
+    </div>
+    <div id="ten-states"><img src = "./Figures/state.png"></img></div>
+    <div id="all-states" class="hidden"><img src = "./Figures/states.png"></img></div>
+  </div>
+
+  <div id="states-text" class="subtext"> Fig 1: Top 10 US states based on percentage of users</div>
+
+  <img src= "./Figures/states_graph.PNG"> </img>
+  <div id="states-graph-text" class="subtext"> Fig 2: Top 10 US states bar chart for number of users  </div>
+
+  <img src= "./Figures/states_choropleth.PNG"> </img>
+  <div id="states-choropleth-text" class="subtext"> Fig 3: States choropleth based on number of users  </div>
+
+</body>
+<script src="script.js"></script>
+</html>

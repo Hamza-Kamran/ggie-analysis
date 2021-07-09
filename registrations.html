@@ -1,0 +1,79 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+
+  <title>GGIE GEOSPATIAL DATA ANALYSIS</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div id= "title">
+    GGIE GEOSPATIAL ANALYSIS
+
+    <nav>
+      <ul>
+      <li><a href="index.html">Home</a></li>
+      <div class="geospatial-dropdown">
+        <li>Geospatials
+          <ul>
+           <li><a href="country.html">Country</a></li>
+           <li><a href="state.html">State</a></li>
+           <li><a href="county.html">County</a></li>
+         </ul>
+        </li>
+       </div>
+      <li><a href="registrations.html">Registrations </a><li>
+      <li><a href="">About GGIE</a></li>
+      </ul>
+    </nav>
+
+  </div>
+  </div>
+
+  <h4> Registration data analysis </h4>
+
+  <p> We analyze registrations across different time periods and plot the number of users registering at a particular day
+      for different time frames. Below are the registration numbers for the different time frames
+  <div id="registrations">
+    <div id="registration-buttons">
+      <button type="button" class="button" id="registration-first" value="partial" onclick="ToggleRegistration('two_year_registrations')">  Past 2 year's</button>
+      <button type="button" class="button" id="registration-second" value = "full" onclick="ToggleRegistration('six_month_registrations')"> Past 6 month's </button>
+      <button type="button" class="button" id="registration-third" value = "full" onclick="ToggleRegistration('last_month_registrations')"> Last month's </button>
+
+    </div>
+    <div id="registration-image-container">
+      <div id="two_year_registrations" class="partial"><img src = "./Figures/two_year_registrations.png"></img> </div>
+      <div id="six_month_registrations" class="hidden"><img src = "./Figures/six_month_registrations.png"></img></div>
+      <div id="last_month_registrations" class="hidden"><img src = "./Figures/last_month_registration.png"></img></div>
+    </div>
+
+    <div id="registrations-text" class="subtext"> Fig 1: Graph of how the number of registrations vary across a particular timeframe </div>
+
+
+
+  <h4> Bookmarking, completing and rating</h4>
+  <p> We also analyzed the distribution of users completing, bookmarking, and raing practices with various combinations. </p>
+
+
+  <div id="barchart_registrations"><img src = "./Figures/barchart_registrations.png"></img></div>
+  <div id="barchart-registrations-text" class="subtext"> Fig 2: Distribution of user practices </div>
+
+  <h4> Analysis of the Distributions </h4>
+  <p> [... ADD MORE DETAILS ...] </p>
+
+
+  <div id="barchart_density_registrations"><img src = "./Figures/barchart_density_registrations.png"></img></div>
+  <div id="barchart-registrations-text" class="subtext"> Fig 3: Density of distributions </div>
+
+  </body>
+
+  <script src="script.js"></script>
+  </html>

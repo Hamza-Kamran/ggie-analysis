@@ -1,0 +1,117 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+
+  <title>GGIE GEOSPATIAL DATA ANALYSIS</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div id= "title">
+    GGIE GEOSPATIAL ANALYSIS
+
+    <nav>
+      <ul>
+      <li><a href="index.html">Home</a></li>
+      <div class="geospatial-dropdown">
+        <li>Geospatials
+          <ul>
+           <li><a href="country.html">Country</a></li>
+           <li><a href="state.html">State</a></li>
+           <li><a href="county.html">County</a></li>
+         </ul>
+        </li>
+       </div>
+      <li><a href="registrations.html">Registrations </a><li>
+      <li><a href="">About GGIE</a></li>
+      </ul>
+    </nav>
+
+  </div>
+  </div>
+
+    <h3> Overview </h3>
+    <p> The data that is compiled and analyzed is retrieved from the GGIE website.
+    User zip codes are used to geographically locate user positions and to chart and
+    the presence and density of users. This is divided into sections: Country-wise distribution,
+    State-wise distribution, and County-Wise distribution. Since County-wise distribution is deemed
+    more important, we further analyze its user-density.
+    </p>
+
+    <h4> Country-Wise </h4>
+    <div id="country">
+      <div id="country-buttons">
+        <button type="button" class="button" id="country-first" value="partial" onclick="ToggleCountry('ten-countries')">Display Top 10</button>
+        <button type="button" class="button" id="country-second" value = "full" onclick="ToggleCountry('all-countries')"> Display All </button>
+      </div>
+      <div id="country-image-container">
+        <div id="ten-countries" class="partial"><img src = "./Figures/country.png"></img> </div>
+        <div id="all-countries" class="hidden"><img src = "./Figures/countries.png"></img></div>
+      </div>
+    </div>
+    <div id="countries-text" class="subtext"> Fig 1: Top countries based on number of users  </div>
+    <img src= "./Figures/country_barchart.PNG"> </img>
+    <div id="countries-users-text" class="subtext"> Fig 2: Top countries based on number of users  </div>
+    <img src= "./Figures/country_percentbarchart.PNG"> </img>
+    <div id="countries-percentage-text" class="subtext"> Fig 3: Top countries based on percentages  </div>
+
+    <img src= "./Figures/world_choropleth.PNG"> </img>
+    <div id="countries-choropleth-text" class="subtext"> Fig 4: Countries choropleth based on number of users  </div>
+
+    <h4> State-Wise </h4>
+    <div id='states'>
+      <div id="state-buttons">
+        <button type="button" class="button" id="state-first" value="partial" onclick="ToggleState('ten-states')">Display Top 10</button>
+        <button type="button" class="button" id="state-second" value = "full" onclick="ToggleState('all-states')"> Display All </button>
+      </div>
+      <div id="ten-states"><img src = "./Figures/state.png"></img></div>
+      <div id="all-states" class="hidden"><img src = "./Figures/states.png"></img></div>
+    </div>
+
+    <div id="states-text" class="subtext"> Fig 5: Top 10 US states based on percentage of users</div>
+
+    <img src= "./Figures/states_graph.PNG"> </img>
+    <div id="states-graph-text" class="subtext"> Fig 6: Top 10 US states bar chart for number of users  </div>
+
+    <img src= "./Figures/states_choropleth.PNG"> </img>
+    <div id="states-choropleth-text" class="subtext"> Fig 7: States choropleth based on number of users  </div>
+
+    <h4> County-Wise </h4>
+    <div id="county">
+      <div id="county-buttons">
+        <button type="button" class="button" id="county-first"  onclick="ToggleCounty('ten-counties')">Display Top 10</button>
+        <button type="button" class="button" id="county-second" onclick="ToggleCounty('all-counties')"> Display All </button>
+      </div>
+      <div id="ten-counties" class="partial"><img src = "./Figures/county.png"></img></div>
+      <div id="all-counties" class="full hidden"><img src = "./Figures/counties.png"></img> </div>
+    </div>
+    <div id="county-text" class="subtext"> Fig 8: Top 10 California counties based on percentage of users</div>
+
+    <img src= "./Figures/county_barchart_users.png"> </img>
+    <div id="county-graph-text" class="subtext"> Fig 9: Top 10 CA counties bar chart for number of users  </div>
+
+    <img src= "./Figures/county_barchart_percentage.png"> </img>
+    <div id="county-graph-text" class="subtext"> Fig 10: Top 10 CA counties bar chart for user percentages  </div>
+
+    <img src= "./Figures/choropleth_users.PNG"> </img>
+    <div id="county-choropleth-text" class="subtext"> Fig 11: States choropleth based on number of users  </div>
+
+    <img src= "./Figures/choropleth_density.PNG"> </img>
+    <div id="county-density-choropleth-text" class="subtext"> Fig 12: California counties choropleth based on density of users  </div>
+
+
+
+
+
+</body>
+
+<script src="script.js"></script>
+</html>
