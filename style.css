@@ -107,7 +107,7 @@ align-content: space-between;
   display: none;
 }
 
-h3, h4 {
+h3, h4, h5 {
   text-align: center;
 }
 
@@ -117,6 +117,10 @@ h3 {
 h4 {
   font-size: 30px;
 }
+h5 {
+  font-size: 28px;
+}
+
 img {
   display: block;
   width: auto;
@@ -175,6 +179,37 @@ a:hover {
 }
 
 #interactive-map img:hover {
+  transform: scale(1.1);
+  transition-duration: 0.3s;
+}
+
+#user-session-visualization {
+  margin-bottom: 100px;
+}
+
+
+#user-session-visualization img {
+  border: 2px solid black;
+  margin-bottom: 40px;
+  transition-duration: 0.3s;
+}
+
+#user-session-visualization a {
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  margin-left: 35%;
+  margin-bottom: 50px;
+  transition-duration: 0.3s;
+}
+
+#user-session-visualization a:hover {
+  color: red;
+  font-size: 26px;
+  transition-duration: 0.3s;
+}
+
+#user-session-visualization img:hover {
   transform: scale(1.1);
   transition-duration: 0.3s;
 }
