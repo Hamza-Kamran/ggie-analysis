@@ -34,6 +34,7 @@ body {
 }
 nav a {
   text-decoration: none;
+    padding-right: 15px;
   color: white;
 }
 nav ul{
@@ -154,7 +155,7 @@ a:hover {
 
 #interactive-map img {
   border: 5px solid brown;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
   transition-duration: 0.3s;
 }
 
